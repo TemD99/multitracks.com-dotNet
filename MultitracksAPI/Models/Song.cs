@@ -1,37 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+#nullable disable
 
 namespace MultitracksAPI.Models
 {
-    public class Song
+    public partial class Song
     {
-
-        public int songID { get; set; }
-        public DateTime dateCreation { get; set; }
-        public int albumID { get; set; }
-
-        public int artistID { get; set; }
-        public string title { get; set; }
-
-        public decimal bpm { get; set; }
-
-        public string timeSignature { get; set; }
-
-        public bool multitracks { get; set; }
-
-        public bool customMix { get; set; }
-
-        public bool chart { get; set; }
-
-        public bool rehearsalMix { get; set; }
-        public bool patches { get; set; }
-
-        public bool songSpecificPatches { get; set; }
-
-        public bool proPresenter { get; set; }
-
-        public Artist Artist { get; set; }
+        public int SongId { get; set; }
+        public DateTime DateCreation { get; set; }
+        public int AlbumId { get; set; }
+        public int ArtistId { get; set; }
+        public string Title { get; set; }
+        public decimal Bpm { get; set; }
+        public string TimeSignature { get; set; }
+        public bool Multitracks { get; set; }
+        public bool CustomMix { get; set; }
+        public bool Chart { get; set; }
+        public bool RehearsalMix { get; set; }
+        public bool Patches { get; set; }
+        public bool SongSpecificPatches { get; set; }
+        public bool ProPresenter { get; set; }
     }
 }
