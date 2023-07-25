@@ -21,5 +21,7 @@ namespace MultitracksAPI.Models
         public bool Patches { get; set; }
         public bool SongSpecificPatches { get; set; }
         public bool ProPresenter { get; set; }
+
+        public Artist Artist { get; set; }
     }
 }

@@ -13,5 +13,7 @@ namespace MultitracksAPI.Models
         public string Biography { get; set; }
         public string ImageUrl { get; set; }
         public string HeroUrl { get; set; }
+
+        public List<Song> Songs { get; set; }
     }
 }
