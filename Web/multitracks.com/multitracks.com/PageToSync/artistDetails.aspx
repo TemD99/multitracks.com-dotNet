@@ -5,9 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
     <title>MultiTracks.com</title>
-    <link media="all" rel="stylesheet" href="./css/index.css">
+    <link media="all" rel="stylesheet" href="./css/index.css"/>
     
 </head>
 <body>
