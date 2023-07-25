@@ -25,6 +25,20 @@ public class ArtistController : ControllerBase
             .ToListAsync();
     }
 
+    // GET: api/Artists/{id}
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Artist>> GetArtist(int id)
+    {
+        var artist = await _context.Artists.FindAsync(id);
+
+        if (artist == null)
+        {
+            return NotFound();
+        }
+
+        return artist;
+    }
+
     // POST: api/Artists/Add
     [HttpPost("Add")]
     public async Task<ActionResult<Artist>> AddArtist(Artist artist)
@@ -32,6 +46,6 @@ public class ArtistController : ControllerBase
         _context.Artists.Add(artist);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction("GetArtist", new { id = artist.ArtistId }, artist);
+        return CreatedAtAction(nameof(GetArtist), new { id = artist.ArtistId }, artist);
     }
 }
